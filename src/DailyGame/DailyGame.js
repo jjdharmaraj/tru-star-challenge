@@ -8,14 +8,20 @@ function DailyGame() {
         
         <div id="challenges">
           <h1>Pick a challenge!</h1>
-          <div id="dailychallenge">
+          <div id="challenge1" class="dailychallenge">
             <h1>Challenge #1</h1>
+            <p>Challenge 1 description goes here.</p>
+            <button id="challengeselect" onclick="">Select</button>
           </div>
-          <div id="dailychallenge">
-            <h1>Challenge #1</h1>
+          <div id="challenge2" class="dailychallenge">
+            <h1>Challenge #2</h1>
+            <p>Challenge 1 description goes here.</p>
+            <button id="challengeselect" onclick="">Select</button>
           </div>
-          <div id="dailychallenge">
-            <h1>Challenge #1</h1>
+          <div id="challenge3" class="dailychallenge">
+            <h1>Challenge #3</h1>
+            <p>Challenge 1 description goes here.</p>
+            <button id="challengeselect" onclick="">Select</button>
           </div>
         </div>
       </header>
