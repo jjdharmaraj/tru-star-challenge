@@ -8,7 +8,7 @@
 
 ## Setup
 
-1. `firebase init` and setup hosting. When asked for what to use for your public directory, type in `build` and this is not a single page application.
+1. `firebase init` and setup hosting. When asked for what to use for your public directory, type in `build` and this is a single page application.
 2. `yarn`
 3. Either `yarn start` to test locally or `yarn deploy` to deploy to firebase hosting.
 
