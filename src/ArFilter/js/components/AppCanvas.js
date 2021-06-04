@@ -7,6 +7,7 @@ import { JEELIZFACEFILTER, NN_4EXPR } from "facefilter";
 // import THREE.js helper, useful to compute pose
 // The helper is not minified, feel free to customize it (and submit pull requests bro):
 import { JeelizThreeFiberHelper } from "../contrib/faceFilter/JeelizThreeFiberHelper.js";
+import { TextGeometry } from "three";
 
 const _maxFacesDetected = 1; // max number of detected faces
 const _faceFollowers = new Array(_maxFacesDetected);
@@ -35,14 +36,19 @@ const FaceFollower = (props) => {
       mouthSmileRef.current.scale.set(s1, 1, s1);
     }
   });
+  // const loader = new THREE.FontLoader();
 
+  // loader.load("fonts/helvetiker_regular.typeface.json", function (font) {
+  // });
   return (
     <object3D ref={objRef}>
       <mesh name="mainCube">
         <boxBufferGeometry args={[1, 1, 1]} />
+
         <meshNormalMaterial />
       </mesh>
 
+      {/* Mouth open and red cylinder */}
       <mesh
         ref={mouthOpenRef}
         rotation={[Math.PI / 2, 0, 0]}
@@ -52,6 +58,7 @@ const FaceFollower = (props) => {
         <meshBasicMaterial color={0xff0000} />
       </mesh>
 
+      {/* mouth smile, but it doesn't ever register with me either because of skin tone or beard */}
       <mesh
         ref={mouthSmileRef}
         rotation={[Math.PI / 2, 0, 0]}
@@ -196,6 +203,7 @@ const AppCanvas = () => {
           position: "fixed",
           zIndex: 2,
           ...sizing,
+          height: "100px",
         }}
         gl={{
           preserveDrawingBuffer: true, // allow image capture
@@ -206,7 +214,8 @@ const AppCanvas = () => {
         <FaceFollower faceIndex={0} expression={_expressions[0]} />
       </Canvas>
 
-      {/* Canvas managed by FaceFilter, just displaying the video (and used for WebGL computations) */}
+      {/* Canvas managed by FaceFilter, just displaying the video (and used for WebGL computations)
+      This is the canvas for the camera */}
       <canvas
         className="mirrorX"
         ref={faceFilterCanvasRef}
