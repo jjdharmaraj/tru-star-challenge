@@ -43,3 +43,8 @@
   background-color: orange;
   border-radius: 10px;
 }
+
+#videoplaceholder {
+  background-color: grey;
+  height: 200px;
+}
