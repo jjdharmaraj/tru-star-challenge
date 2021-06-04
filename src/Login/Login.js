@@ -1,21 +1,21 @@
-import logo from "./logo.svg";
+import snapchatGhost from "./Snapchat-Ghost-logo.png";
+import tiktokLogo from "./tik-tok-logo.png";
 import "./Login.css";
 
 function Login() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/Login/Login.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a className="App-link" href="/daily-game" rel="noopener noreferrer">
+          {/* Log in with Snapchat{" "} */}
+          <img
+            src={snapchatGhost}
+            className="App-logo"
+            alt="Snapchat Ghost logo"
+          />
+        </a>
+        <a className="App-link" href="/daily-game" rel="noopener noreferrer">
+          <img src={tiktokLogo} className="App-logo" alt="TikTok logo" />
         </a>
       </header>
     </div>
