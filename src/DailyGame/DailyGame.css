@@ -1,44 +1,25 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 h2 {
-  float:left;
-  color: #01B8FE;
+  float: left;
+  color: #01b8fe;
 }
 
 #challenges {
   background-color: rgb(255, 255, 255);
   border-radius: 0;
   padding: 20px;
-  color: #65008C;
+  color: #65008c;
   width: 500px;
   max-width: 100%;
 }
 
 .dailychallenge {
   background-color: white;
-  border: solid 5px #01B8FE;
+  border: solid 5px #01b8fe;
   color: black;
   border-radius: 0;
   padding: 20px;
   margin: 20px;
-  transition: .1s linear;
+  transition: 0.1s linear;
 }
 
 .dailychallenge img {
@@ -70,8 +51,7 @@ input {
   float: left;
 }
 
-#logo{
+#logo {
   width: 70%;
   margin-bottom: -20px;
 }
-
