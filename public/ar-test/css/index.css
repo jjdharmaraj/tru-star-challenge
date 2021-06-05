@@ -1,0 +1,19 @@
+.cadre {
+  z-index: 11;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  width: 100vmin;
+  transform: translate(-50%, -50%);
+}
+.mirrorX {
+  transform: rotateY(180deg);
+  margin: 32px;
+  position: absolute;
+  width: 80%;
+}
+.container {
+  position: relative;
+}
