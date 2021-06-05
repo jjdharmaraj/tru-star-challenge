@@ -44,6 +44,10 @@
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 #videoplaceholder {
   background-color: grey;
   height: 200px;
