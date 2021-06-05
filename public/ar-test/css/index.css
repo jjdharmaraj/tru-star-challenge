@@ -30,9 +30,9 @@ body {
   color: white;
 }
 .button {
-  background-color: #008cba;
-  border: none;
-  color: white;
+  background-color: #ffffff;
+  border: 5px solid #65008c;
+  color: #65008c;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
