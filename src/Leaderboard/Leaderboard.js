@@ -35,14 +35,14 @@ function Leaderboard() {
 
                <tr>
                  <td>1</td>
-                 <td> <img alt="User avatar" class="avatar" src={ faker.internet.avatar() }/> </td>
+                 <td> <img alt="User avatar" className="avatar" src={ faker.internet.avatar() }/> </td>
                  <td>{faker.internet.userName()}</td>
                  <td>17</td>
                </tr>
                {rows.map((row, index) => (
-                 <tr>
+                 <tr key={index}>
                   <td>{ row.rank } </td>
-                  <td> <img alt="User avatar" class="avatar" src={ row.avatar } /></td>
+                  <td> <img alt="User avatar" className="avatar" src={ row.avatar } /></td>
                   <td> { row.username } </td>
                   <td> { row.score } </td> 
                  </tr>
