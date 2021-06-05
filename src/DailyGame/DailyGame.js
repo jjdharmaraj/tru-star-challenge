@@ -1,9 +1,10 @@
 import "./DailyGame.css";
+import Footer from "../Footer/Footer";
 
 function showInfo() {
   let toggleElem = document.getElementById("hidden1");
   let toggleButton = document.getElementById("challenge1select");
-  if (toggleElem.style.display == "inline") {
+  if (toggleElem.style.display === "inline") {
     toggleElem.style.display = "none";
     toggleButton.innerHTML = "Learn More";
   } else {
@@ -16,9 +17,7 @@ function showInfo() {
 function DailyGame() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Daily Game</p>
-        
+      <header className="App-header">        
         <div id="challenges">
           <img alt="logo" id="logo" src="https://truestarfoundation.org/wp-content/uploads/thegem-logos/logo_364c37e5b8371ced5c35fe432177ee71_2x.png"></img>
           <h1>Pick a challenge!</h1>
@@ -35,8 +34,8 @@ function DailyGame() {
                 </ul>
                 Need inspiration? Check out this <a href="">article from 99designs</a>!
               </p>
-              <input type="file" />​
-              <button className="challengeselect" onClick="">Upload</button>
+              <input type="file" />
+              <button className="challengeselect"><a href="/challenge-complete">Upload</a></button>
             </div>
             <button className="challengeselect" id="challenge1select" onClick={showInfo}>Learn More</button>
           </div>
@@ -51,6 +50,7 @@ function DailyGame() {
             <button className="challengeselect" onClick="#">Learn More</button>
           </div>
         </div>
+        { <Footer/>}
       </header>
     </div>
   );
