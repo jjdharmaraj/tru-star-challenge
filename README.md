@@ -1,4 +1,4 @@
-# Tru Star Challenge
+# True Star Challenge
 
 ## Prerequisites
 

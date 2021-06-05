@@ -44,7 +44,7 @@ function init_threeScene(spec) {
   const fontLoader = new THREE.FontLoader();
 
   fontLoader.load("./fonts/helvetiker_regular.typeface.json", (font) => {
-    const textGeometry = new THREE.TextGeometry("#TruStarChallenge", {
+    const textGeometry = new THREE.TextGeometry("#TrueStarChallenge", {
       font: font,
       size: 0.25,
       height: 0.1,
